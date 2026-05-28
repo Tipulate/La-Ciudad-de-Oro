@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40">
+  <rect x="0" y="0" width="60" height="40" rx="5" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <circle cx="43" cy="20" r="14" fill="#f76f20"/>
+  <text x="14" y="24" font-size="7" fill="#231f20" font-weight="bold" font-family="sans-serif">DISC</text>
+  <text x="8" y="32" font-size="5" fill="#231f20" font-family="sans-serif">OVER</text>
+</svg>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Golden City – Online Casino</title>
+  <link rel="icon" type="image/svg+xml" href="recursos/icons/crown.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="recursos/styles.css" />
+</head>
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header class="site-header">
+    <a class="logo" href="#" aria-label="The Golden City – Inicio">
+      <img class="logo-icon" src="recursos/icons/dome.svg" alt="Logo Golden City" />
+      <div class="logo-text">
+        <span class="the">THE</span>
+        <span class="name">GOLDEN</span>
+        <span class="city">CITY</span>
+      </div>
+    </a>
+    <button id="header-auth-btn" class="header-btn">Iniciar Sesión / Regístrate</button>
+  </header>
+
+  <!-- ======= NAVEGACIÓN ======= -->
+  <nav class="main-nav" aria-label="Navegación principal">
+    <button class="nav-item active" data-page="inicio">Inicio</button>
+    <button class="nav-item" data-page="juegos">Juegos</button>
+    <button class="nav-item" data-page="promociones">Promociones</button>
+    <button class="nav-item" data-page="vip">VIP</button>
+    <button class="nav-item" data-page="soporte">Soporte</button>
+  </nav>
+
+  <!-- ============================================================ -->
+  <!-- PÁGINA: INICIO                                               -->
+  <!-- ============================================================ -->
+  <main id="page-inicio" class="page-section active">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Bienvenida">
+      <div class="hero-bg">
+        <img src="recursos/img/hero-city.svg" alt="Ciudad de Oro" />
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <img class="hero-crown" src="recursos/icons/crown.svg" alt="" aria-hidden="true" />
+        <h1 class="hero-title">BIENVENIDO A LA<br>CIUDAD DE ORO</h1>
+        <p class="hero-subtitle">Explora riquezas infinitas en el reino de los juegos.</p>
+        <button id="hero-cta-btn" class="hero-cta">Empieza a Jugar</button>
+      </div>
+    </section>
+
+    <!-- SECCIÓN DE JUEGOS CON SIDEBAR -->
+    <section class="games-section">
+      <div class="section-header">
+        <span class="section-label">Sección de Juegos</span>
+        <h2 class="section-title">NUESTROS JUEGOS PRINCIPALES</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="games-layout">
+        <!-- Sidebar -->
+        <aside class="games-sidebar" aria-label="Categorías de juegos">
+          <div class="sidebar-category active" data-cat="todos">
+            <img src="recursos/icons/dice.svg" alt="" />
+            Todos
+          </div>
+          <div class="sidebar-category" data-cat="slots">
+            <img src="recursos/icons/slot.svg" alt="" />
+            Tragamonedas
+          </div>
+          <div class="sidebar-category" data-cat="mesa">
+            <img src="recursos/icons/roulette.svg" alt="" />
+            Juegos de Mesa
+          </div>
+          <div class="sidebar-category" data-cat="vivo">
+            <img src="recursos/icons/live.svg" alt="" />
+            Casino en Vivo
+          </div>
+        </aside>
+
+        <!-- Grid de juegos -->
+        <div class="games-grid" role="list" aria-label="Juegos disponibles">
+
+          <!-- Fila 1 -->
+          <article class="game-card" data-cat="slots" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/slot.svg" alt="Tragamonedas del Templo de Oro" />
+              <span class="game-prize">$125,000</span>
+            </div>
+            <div class="game-info">
+              <p class="game-name">Tragamonedas del Templo de Oro</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <article class="game-card" data-cat="mesa" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/roulette.svg" alt="Ruleta de la Fortuna" />
+            </div>
+            <div class="game-info">
+              <p class="game-name">Ruleta de la Fortuna</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <article class="game-card" data-cat="mesa" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/blackjack.svg" alt="Blackjack Real" />
+            </div>
+            <div class="game-info">
+              <p class="game-name">Blackjack Real</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <article class="game-card" data-cat="mesa" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/poker.svg" alt="Póker de la Ciudad" />
+              <span class="game-prize">$125,000</span>
+            </div>
+            <div class="game-info">
+              <p class="game-name">Póker de la Ciudad</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <article class="game-card" data-cat="vivo" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/live.svg" alt="Póker en Vivo" />
+            </div>
+            <div class="game-info">
+              <p class="game-name">Póker en Vivo</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <!-- Fila 2 -->
+          <article class="game-card" data-cat="slots" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/slot.svg" alt="Tragamonedas de la Ciudad" />
+              <div class="game-badge">
+                <img src="recursos/icons/badge-new.svg" alt="Nuevo" />
+              </div>
+            </div>
+            <div class="game-info">
+              <p class="game-name">Tragamonedas de la Ciudad</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <article class="game-card" data-cat="mesa" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/blackjack.svg" alt="Póker Dorado" />
+              <span class="game-prize">Ruleta: $45,000</span>
+            </div>
+            <div class="game-info">
+              <p class="game-name">Póker Dorado</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <article class="game-card" data-cat="slots" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/slot.svg" alt="Sone Fuibtes" />
+              <span class="game-prize">$125,000</span>
+              <div class="game-badge">
+                <img src="recursos/icons/badge-hot.svg" alt="Hot" />
+              </div>
+            </div>
+            <div class="game-info">
+              <p class="game-name">Tragamonedas Fortuna</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <article class="game-card" data-cat="mesa" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/roulette.svg" alt="Ruleta Portuga" />
+              <span class="game-prize">$125,000</span>
+            </div>
+            <div class="game-info">
+              <p class="game-name">Ruleta Europea</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+          <article class="game-card" data-cat="vivo" role="listitem">
+            <div class="game-thumb">
+              <img src="recursos/icons/live.svg" alt="Ruleta en Vivo" />
+              <span class="game-prize">Ruleta: $45,000</span>
+            </div>
+            <div class="game-info">
+              <p class="game-name">Ruleta de la Vivo</p>
+              <button class="game-play-btn">Jugar</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMOCIONES RÁPIDAS -->
+    <section class="promo-section">
+      <div class="section-header" style="margin-bottom: 24px;">
+        <div class="section-divider"></div>
+        <h2 class="section-title">OFERTAS ESPECIALES</h2>
+        <div class="section-divider"></div>
+      </div>
+      <div class="promo-grid">
+        <div class="promo-card">
+          <div class="promo-icon">🎁</div>
+          <h3 class="promo-title">Bono de Bienvenida</h3>
+          <p class="promo-desc">Recibe hasta el 200% en tu primer depósito. Únete a la ciudad de oro.</p>
+          <span class="promo-amount">$500.000</span>
+          <button class="promo-btn">Reclamar Bono</button>
+        </div>
+        <div class="promo-card">
+          <div class="promo-icon">🔄</div>
+          <h3 class="promo-title">Giros Gratis</h3>
+          <p class="promo-desc">50 giros gratis cada semana en nuestras tragamonedas premium.</p>
+          <span class="promo-amount">50 Giros</span>
+          <button class="promo-btn">Activar</button>
+        </div>
+        <div class="promo-card">
+          <div class="promo-icon">🏆</div>
+          <h3 class="promo-title">Torneo Semanal</h3>
+          <p class="promo-desc">Compite contra los mejores y gana premios exclusivos VIP.</p>
+          <span class="promo-amount">$1.000.000</span>
+          <button class="promo-btn">Participar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIP PREVIEW -->
+    <section class="vip-section">
+      <img src="recursos/icons/crown.svg" alt="" style="width:40px;height:40px;margin:0 auto 16px;display:block;filter:drop-shadow(0 0 10px rgba(201,168,76,0.6));" aria-hidden="true" />
+      <h2 class="vip-title">PROGRAMA VIP EXCLUSIVO</h2>
+      <p class="vip-subtitle">Asciende en los rangos y desbloquea privilegios únicos</p>
+      <div class="vip-levels">
+        <div class="vip-level"><div class="vip-star">🥉</div><div class="vip-name">BRONCE</div></div>
+        <div class="vip-level"><div class="vip-star">🥈</div><div class="vip-name">PLATA</div></div>
+        <div class="vip-level"><div class="vip-star">🥇</div><div class="vip-name">ORO</div></div>
+        <div class="vip-level"><div class="vip-star">💎</div><div class="vip-name">DIAMANTE</div></div>
+        <div class="vip-level"><div class="vip-star">👑</div><div class="vip-name">ÉLITE</div></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- PÁGINA: JUEGOS                                               -->
+  <!-- ============================================================ -->
+  <main id="page-juegos" class="page-section">
+    <div class="juegos-page">
+      <div class="juegos-intro">
+        <h2>CATÁLOGO COMPLETO DE JUEGOS</h2>
+        <p>Más de 200 juegos para todos los gustos. Filtra por categoría y encuentra tu favorito.</p>
+      </div>
+
+      <div class="juegos-cats">
+        <button class="juegos-cat-btn active" data-cat="todos">Todos</button>
+        <button class="juegos-cat-btn" data-cat="slots">Tragamonedas</button>
+        <button class="juegos-cat-btn" data-cat="mesa">Juegos de Mesa</button>
+        <button class="juegos-cat-btn" data-cat="poker">Póker</button>
+        <button class="juegos-cat-btn" data-cat="vivo">Casino en Vivo</button>
+        <button class="juegos-cat-btn" data-cat="dados">Dados</button>
+      </div>
+
+      <div class="juegos-grid-full" role="list">
+
+        <!-- 12 juegos completos -->
+        <article class="game-card full-game-card" data-cat="slots" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/slot.svg" alt="Templo de Oro" /><span class="game-prize">$125,000</span><div class="game-badge"><img src="recursos/icons/badge-hot.svg" alt="Hot" /></div></div>
+          <div class="game-info"><p class="game-name">Templo de Oro</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="mesa" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/roulette.svg" alt="Ruleta Europea" /></div>
+          <div class="game-info"><p class="game-name">Ruleta Europea</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="mesa" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/blackjack.svg" alt="Blackjack Clásico" /></div>
+          <div class="game-info"><p class="game-name">Blackjack Clásico</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="poker" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/poker.svg" alt="Texas Hold'em" /><span class="game-prize">$45,000</span></div>
+          <div class="game-info"><p class="game-name">Texas Hold'em</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="vivo" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/live.svg" alt="Baccarat en Vivo" /></div>
+          <div class="game-info"><p class="game-name">Baccarat en Vivo</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="dados" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/dice.svg" alt="Craps Royal" /></div>
+          <div class="game-info"><p class="game-name">Craps Royal</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="slots" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/slot.svg" alt="Dragon Slots" /><div class="game-badge"><img src="recursos/icons/badge-new.svg" alt="Nuevo" /></div></div>
+          <div class="game-info"><p class="game-name">Dragon Slots</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="mesa" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/roulette.svg" alt="Ruleta Americana" /></div>
+          <div class="game-info"><p class="game-name">Ruleta Americana</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="poker" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/blackjack.svg" alt="Video Póker" /></div>
+          <div class="game-info"><p class="game-name">Video Póker</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="vivo" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/live.svg" alt="Blackjack en Vivo" /></div>
+          <div class="game-info"><p class="game-name">Blackjack en Vivo</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="slots" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/slot.svg" alt="Fruits & Gold" /><span class="game-prize">$80,000</span></div>
+          <div class="game-info"><p class="game-name">Fruits &amp; Gold</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+        <article class="game-card full-game-card" data-cat="dados" role="listitem">
+          <div class="game-thumb"><img src="recursos/icons/dice.svg" alt="Sic Bo" /></div>
+          <div class="game-info"><p class="game-name">Sic Bo</p><button class="game-play-btn">Jugar</button></div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- PÁGINA: PROMOCIONES                                          -->
+  <!-- ============================================================ -->
+  <main id="page-promociones" class="page-section">
+    <div class="promo-page">
+      <h2 class="promo-page-title">PROMOCIONES EXCLUSIVAS</h2>
+      <p class="promo-page-sub">Las mejores ofertas para maximizar tu experiencia en The Golden City</p>
+
+      <div class="promo-big-card">
+        <div>
+          <span class="promo-big-amount">200%</span>
+          <h3 class="promo-big-title">Bono de Bienvenida hasta $500.000</h3>
+          <p class="promo-big-desc">En tu primer depósito, duplicamos tu dinero. Únete hoy y comienza con el doble de fondos para explorar todos nuestros juegos.</p>
+        </div>
+        <button class="promo-btn vip-claim-btn" style="white-space:nowrap;">Reclamar Ahora</button>
+      </div>
+
+      <div class="promo-big-card">
+        <div>
+          <span class="promo-big-amount">50 Giros</span>
+          <h3 class="promo-big-title">Giros Gratis cada Semana</h3>
+          <p class="promo-big-desc">Cada semana recibirás 50 giros gratis en nuestra selección de tragamonedas premium sin necesidad de depósito adicional.</p>
+        </div>
+        <button class="promo-btn vip-claim-btn" style="white-space:nowrap;">Activar Giros</button>
+      </div>
+
+      <div class="promo-big-card">
+        <div>
+          <span class="promo-big-amount">$1.000.000</span>
+          <h3 class="promo-big-title">Torneo Semanal VIP</h3>
+          <p class="promo-big-desc">Compite cada semana contra los mejores jugadores del casino y llévate premios en efectivo. Los 10 primeros puestos ganan.</p>
+        </div>
+        <button class="promo-btn vip-claim-btn" style="white-space:nowrap;">Inscribirse</button>
+      </div>
+
+      <div class="promo-big-card">
+        <div>
+          <span class="promo-big-amount">10%</span>
+          <h3 class="promo-big-title">Cashback Semanal</h3>
+          <p class="promo-big-desc">Recupera el 10% de tus pérdidas de la semana, reinvertido automáticamente en tu cuenta cada lunes.</p>
+        </div>
+        <button class="promo-btn vip-claim-btn" style="white-space:nowrap;">Ver Detalles</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- PÁGINA: VIP                                                  -->
+  <!-- ============================================================ -->
+  <main id="page-vip" class="page-section">
+    <div class="vip-page">
+      <div style="text-align:center;">
+        <img src="recursos/icons/crown.svg" alt="" style="width:52px;height:52px;margin:0 auto 16px;display:block;filter:drop-shadow(0 0 12px rgba(201,168,76,0.7));" aria-hidden="true" />
+        <h2 style="font-family:'Cinzel',serif;font-size:32px;color:var(--gold-light);margin-bottom:8px;">CLUB VIP THE GOLDEN CITY</h2>
+        <p style="font-family:'Crimson Text',serif;font-size:18px;color:var(--text-muted);font-style:italic;margin-bottom:8px;">Cinco niveles de privilegios exclusivos</p>
+        <p style="font-size:15px;color:var(--text-muted);max-width:600px;margin:0 auto;">Mientras más juegas, más exclusivo te vuelves. Cada nivel desbloquea ventajas únicas, bonos especiales y atención personalizada.</p>
+      </div>
+
+      <div class="vip-page-grid">
+
+        <div class="vip-card">
+          <div class="vip-card-star">🥉</div>
+          <div class="vip-card-name">BRONCE</div>
+          <p class="vip-card-perk">Bono de bienvenida<br>Soporte estándar<br>Giros semanales<br>Cashback 5%</p>
+          <button class="promo-btn vip-claim-btn" style="margin-top:14px;font-size:11px;padding:8px 16px;">Comenzar</button>
+        </div>
+
+        <div class="vip-card">
+          <div class="vip-card-star">🥈</div>
+          <div class="vip-card-name">PLATA</div>
+          <p class="vip-card-perk">50 giros extra<br>Soporte prioritario<br>Torneos mensuales<br>Cashback 7%</p>
+          <button class="promo-btn vip-claim-btn" style="margin-top:14px;font-size:11px;padding:8px 16px;">Alcanzar</button>
+        </div>
+
+        <div class="vip-card">
+          <div class="vip-card-star">🥇</div>
+          <div class="vip-card-name">ORO</div>
+          <p class="vip-card-perk">100 giros extra<br>Retiro prioritario<br>Torneos semanales<br>Cashback 10%</p>
+          <button class="promo-btn vip-claim-btn" style="margin-top:14px;font-size:11px;padding:8px 16px;">Alcanzar</button>
+        </div>
+
+        <div class="vip-card">
+          <div class="vip-card-star">💎</div>
+          <div class="vip-card-name">DIAMANTE</div>
+          <p class="vip-card-perk">Giros ilimitados<br>Límites elevados<br>Gestor dedicado<br>Cashback 15%</p>
+          <button class="promo-btn vip-claim-btn" style="margin-top:14px;font-size:11px;padding:8px 16px;">Alcanzar</button>
+        </div>
+
+        <div class="vip-card" style="border-color:var(--gold);box-shadow:0 0 20px rgba(201,168,76,0.25);">
+          <div class="vip-card-star">👑</div>
+          <div class="vip-card-name">ÉLITE</div>
+          <p class="vip-card-perk">Acceso total<br>Viajes y premios<br>Concierge 24/7<br>Cashback 20%</p>
+          <button class="promo-btn vip-claim-btn" style="margin-top:14px;font-size:11px;padding:8px 16px;">Invitación</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- PÁGINA: SOPORTE                                              -->
+  <!-- ============================================================ -->
+  <main id="page-soporte" class="page-section">
+    <div class="soporte-section" style="min-height:60vh;">
+      <div class="section-header" style="margin-bottom:32px;">
+        <div class="section-divider"></div>
+        <h2 class="section-title" style="white-space:nowrap;">CENTRO DE SOPORTE</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <p style="text-align:center;font-family:'Crimson Text',serif;font-size:17px;color:var(--text-muted);font-style:italic;margin-bottom:36px;">Estamos aquí para ayudarte las 24 horas del día, los 7 días de la semana</p>
+
+      <div class="soporte-grid">
+
+        <div class="soporte-card">
+          <div class="soporte-icon">💬</div>
+          <h3 class="soporte-title">Chat en Vivo</h3>
+          <p class="soporte-desc">Habla con un agente en tiempo real. Respuesta inmediata disponible las 24 horas.</p>
+          <button class="soporte-btn">Iniciar Chat</button>
+        </div>
+
+        <div class="soporte-card">
+          <div class="soporte-icon">📧</div>
+          <h3 class="soporte-title">Correo Electrónico</h3>
+          <p class="soporte-desc">Envíanos tu consulta y te responderemos en menos de 24 horas hábiles.</p>
+          <button class="soporte-btn">Enviar Email</button>
+        </div>
+
+        <div class="soporte-card">
+          <div class="soporte-icon">📞</div>
+          <h3 class="soporte-title">Línea Telefónica</h3>
+          <p class="soporte-desc">Llámanos directamente para consultas urgentes sobre tu cuenta o pagos.</p>
+          <button class="soporte-btn">Ver Número</button>
+        </div>
+
+        <div class="soporte-card" style="grid-column:1/-1;max-width:600px;margin:0 auto;">
+          <div class="soporte-icon">❓</div>
+          <h3 class="soporte-title">Preguntas Frecuentes</h3>
+          <p class="soporte-desc">Encuentra respuestas rápidas sobre pagos, bonos, retiros y más.</p>
+          <button class="soporte-btn">Ver FAQ</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer" aria-label="Pie de página">
+    <div class="footer-payments" aria-label="Métodos de pago">
+      <img src="recursos/img/visa.svg" alt="Visa" />
+      <img src="recursos/img/mastercard.svg" alt="Mastercard" />
+      <img src="recursos/img/discover.svg" alt="Discover" />
+      <img src="recursos/img/crypto.svg" alt="Criptomonedas" />
+    </div>
+    <p class="footer-copy">© 2025 The Golden City. Juega con responsabilidad. +18</p>
+    <div class="footer-badges" aria-label="Certificaciones">
+      <div class="footer-badge"><span>🔒</span> Regulation</div>
+      <div class="footer-badge"><span>✓</span> EOT</div>
+      <div class="footer-badge"><span>🛡</span> Regulation</div>
+    </div>
+  </footer>
+
+  <!-- ============================================================ -->
+  <!-- MODAL: LOGIN / REGISTRO                                      -->
+  <!-- ============================================================ -->
+  <div id="modal-auth" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Iniciar sesión o registrarse">
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Cerrar modal">✕</button>
+
+      <div class="modal-logo">
+        <img src="recursos/icons/dome.svg" alt="Logo Golden City" />
+        <h2>THE GOLDEN CITY</h2>
+      </div>
+
+      <div class="modal-tabs" role="tablist">
+        <button class="modal-tab active" data-tab="login" role="tab">INICIAR SESIÓN</button>
+        <button class="modal-tab" data-tab="register" role="tab">REGISTRARSE</button>
+      </div>
+
+      <!-- FORM: Login -->
+      <div id="form-login" class="modal-form active" role="tabpanel">
+        <div class="form-group">
+          <label for="login-email">CORREO ELECTRÓNICO</label>
+          <input id="login-email" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="login-pass">CONTRASEÑA</label>
+          <input id="login-pass" type="password" placeholder="••••••••" autocomplete="current-password" />
+        </div>
+        <button id="btn-login" class="form-submit">INGRESAR</button>
+        <p class="form-footer">¿No tienes cuenta? <a id="link-register">Regístrate aquí</a></p>
+      </div>
+
+      <!-- FORM: Registro -->
+      <div id="form-register" class="modal-form" role="tabpanel">
+        <div class="form-group">
+          <label for="reg-name">NOMBRE COMPLETO</label>
+          <input id="reg-name" type="text" placeholder="Tu nombre" autocomplete="name" />
+        </div>
+        <div class="form-group">
+          <label for="reg-email">CORREO ELECTRÓNICO</label>
+          <input id="reg-email" type="email" placeholder="tucorreo@ejemplo.com" autocomplete="email" />
+        </div>
+        <div class="form-group">
+          <label for="reg-pass">CONTRASEÑA</label>
+          <input id="reg-pass" type="password" placeholder="Mínimo 8 caracteres" autocomplete="new-password" />
+        </div>
+        <div class="form-group">
+          <label for="reg-pass2">CONFIRMAR CONTRASEÑA</label>
+          <input id="reg-pass2" type="password" placeholder="Repite tu contraseña" autocomplete="new-password" />
+        </div>
+        <button id="btn-register" class="form-submit">CREAR CUENTA</button>
+        <p class="form-footer">¿Ya tienes cuenta? <a id="link-login">Inicia sesión</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="recursos/app.js"></script>
+</body>
+</html>

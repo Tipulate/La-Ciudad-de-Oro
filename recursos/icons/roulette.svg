@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="55" fill="#006400" stroke="#C9A84C" stroke-width="3"/>
+  <circle cx="60" cy="60" r="40" fill="#004d00" stroke="#C9A84C" stroke-width="1.5"/>
+  <circle cx="60" cy="60" r="12" fill="#C9A84C"/>
+  <circle cx="60" cy="60" r="6" fill="#8B6914"/>
+  <line x1="60" y1="5" x2="60" y2="115" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <line x1="5" y1="60" x2="115" y2="60" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <line x1="21" y1="21" x2="99" y2="99" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <line x1="99" y1="21" x2="21" y2="99" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+  <text x="60" y="24" font-size="9" text-anchor="middle" fill="white" font-family="sans-serif">0</text>
+  <text x="60" y="100" font-size="9" text-anchor="middle" fill="#ff4444" font-family="sans-serif">32</text>
+  <text x="18" y="64" font-size="9" text-anchor="middle" fill="white" font-family="sans-serif">26</text>
+  <text x="102" y="64" font-size="9" text-anchor="middle" fill="#ff4444" font-family="sans-serif">15</text>
+</svg>
